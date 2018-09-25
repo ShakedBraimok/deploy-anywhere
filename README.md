@@ -3,10 +3,11 @@
 ## deploy.sh 
 This script creates a full environment for development based Docker containers & Jenkins Pipeline .
 
-The environment contains : 
-- Docker image for Maven app
-- Jenkins Master & Slave
-- Listener (for DockerHub)
-- Pipeline job for the Maven-app build & image update .
+**The environment contains:**
+- Jenkins Master & Slave on Swarm.
+- Listener (for DockerHub), created with Python Flask.
+- Container for Maven app.
+- Pipeline job for the Maven-app build & update image in registry .
+
 
 ## The Flow
