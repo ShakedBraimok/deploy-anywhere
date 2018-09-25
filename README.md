@@ -3,7 +3,7 @@
 ## deploy.sh 
 This script creates a full environment for development based Docker containers & Jenkins Pipeline .
 
-The env contains : 
+The environment contains : 
 - Docker image for Maven app
 - Jenkins Master & Slave
 - Listener (for DockerHub)
