@@ -1,7 +1,8 @@
 # deploy-anywhere
 
 ## deploy.sh 
-This script creates a full env.
+This script creates a full environment for development based Docker containers & Jenkins Pipeline .
+
 The env contains : 
 - Docker image for Maven app
 - Jenkins Master & Slave
