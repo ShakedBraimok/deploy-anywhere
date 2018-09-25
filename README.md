@@ -1,6 +1,6 @@
 # deploy-anywhere
 
-# deploy.sh
+## deploy.sh 
 This script creates a full env.
 The env contains : 
 - Docker image for Maven app
@@ -8,3 +8,4 @@ The env contains :
 - Listener (for DockerHub)
 - Pipeline job for the Maven-app build & image update .
 
+## The Flow
