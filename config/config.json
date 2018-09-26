@@ -1,0 +1,5 @@
+{
+  "git_repository": "https://github.com/ShakedBraimok/deploy-anywhere.git",
+  "dockerhub_repository": "shakedbraimok/example-app",
+  "log_path": "/var/log/deploy_anywhere.log"
+}

@@ -1,0 +1,40 @@
+node {
+   def mvnHome
+   stage('Preparation') {
+
+    // get code from github
+      git 'https://github.com/ShakedBraimok/simple-java-maven-app.git'
+
+    // maven
+      mvnHome = tool 'M3'
+   }
+   stage('Build') {
+      // Run the maven build
+         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+
+   }
+   stage('Results') {
+       // generate jar
+      junit '**/target/surefire-reports/TEST-*.xml'
+      archive 'target/*.jar'
+   }
+
+   stage('Preparing For Image Build') {
+      sh 'cp ./target/my-app-1.0-SNAPSHOT.jar /opt/deployment-files'
+      buildImage email: '', name: 'example-app', password: '', path: '/opt/deployment-files', rm: false, timeout: 0, username: ''
+      //sh 'cd /opt/deployment-files &&  docker build -t webserver .'
+   }
+
+  // stage('Call BuildAndUpload job'){
+    //   build 'buildAndUpload'
+   //}
+
+
+   //stage('Upload Image') {
+    //  sh 'docker login --username=shakedbraimok --password=$DOCKER_PASS hub.docker.com'
+     // sh 'docker tag example-app shakedbraimok/example-app'
+      //sh 'docker push shakedbraimok/example-app'
+
+   //}
+
+}
