@@ -17,6 +17,6 @@ This script creates a full environment for development based Docker containers &
 ![alt text](https://github.com/ShakedBraimok/deploy-anywhere/blob/master/img/work_with_the_flow.png)
 
 ## Installation
-- git clone 
+- git clone https://github.com/ShakedBraimok/deploy-anywhere.git
 - Edit config.json according to your values.
 - Run deploy.sh
