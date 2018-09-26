@@ -11,5 +11,5 @@ This script creates a full environment for development based Docker containers &
 
 
 ## The Flow
-![alt text](https://github.com/ShakedBraimok/deploy-anywhere/blob/master/flow.png)
+![alt text](https://github.com/ShakedBraimok/deploy-anywhere/blob/master/img/flow.png)
 
