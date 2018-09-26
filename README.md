@@ -10,6 +10,8 @@ This script creates a full environment for development based Docker containers &
 - Pipeline job for the Maven-app build & update image in registry .
 
 
-## The Flow
+## Project Flow
 ![alt text](https://github.com/ShakedBraimok/deploy-anywhere/blob/master/img/flow.png)
 
+## Workflow
+![alt text](https://github.com/ShakedBraimok/deploy-anywhere/blob/master/img/work_with_the_flow.jpg)
