@@ -1,5 +1,6 @@
 #!/bin/sh
 
+
 echo "Createing Swarm with Jenkins Master & Agent services"
 #--- MASTER ---#
 docker pull jenkinsci/jenkins
