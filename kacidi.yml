@@ -1,15 +1,13 @@
-version: 1.0
-platform: cloudformation # / gcp / TF
- 
+---
+version: 1
+platform: cloudformation
 pipeline:
-- on_pull_request:
-    destination_branch: "*"
+  on_pull_request:
+  - destination_branch: "*"
     source_branch: "*"
     action: create_change_set
-
-- on_merge:
+  on_merge:
   - branch: master
-    stack_name: "prod-$TEMPLATE_NAME"
-
+    stack_name: prod-$TEMPLATE_NAME
   - branch: develop
-    stack_name: "stg-$TEMPLATE_NAME"
+    stack_name: stg-$TEMPLATE_NAME
