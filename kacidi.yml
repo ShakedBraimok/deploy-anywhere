@@ -11,3 +11,5 @@ pipeline:
     stack_name: prod-$TEMPLATE_NAME
   - branch: develop
     stack_name: stg-$TEMPLATE_NAME
+
+#edit
