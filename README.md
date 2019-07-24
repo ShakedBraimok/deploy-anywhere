@@ -20,3 +20,6 @@ This script creates a full environment for development based Docker containers &
 - git clone https://github.com/ShakedBraimok/deploy-anywhere.git
 - Edit config/config.json according to your values.
 - Run deploy.sh
+
+
+...
